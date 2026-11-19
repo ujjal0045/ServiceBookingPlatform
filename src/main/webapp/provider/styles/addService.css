@@ -1,0 +1,91 @@
+
+/* Page Background */
+body {
+    background-color: #f4f6fb;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Container */
+.container {
+    max-width: 1100px;
+}
+
+/* Form Card */
+.card {
+    border: none;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+.card-body {
+    padding: 35px !important;
+}
+
+/* Heading */
+h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #252b42;
+}
+
+/* Labels */
+.form-label {
+    font-weight: 600;
+    color: #343a40;
+}
+
+/* Input Fields */
+.form-control {
+    padding: 12px;
+    border: 1px solid #dce1eb;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 0.2rem rgba(108, 99, 255, 0.12);
+}
+
+/* Textarea */
+textarea.form-control {
+    resize: vertical;
+}
+
+/* Price Input */
+.input-group-text {
+    background-color: #f0f1f8;
+    border-color: #dce1eb;
+    font-weight: 600;
+}
+
+/* Add Service Button */
+.btn-primary {
+    background-color: #6258e8;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #4d43c9;
+    transform: translateY(-2px);
+}
+
+/* Back Button */
+.btn-outline-secondary {
+    border-radius: 8px;
+    padding: 9px 16px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+    .card-body {
+        padding: 22px !important;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}

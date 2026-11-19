@@ -1,0 +1,388 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #172033;
+}
+
+.navbar-section {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.navbar {
+    min-height: 75px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 20px;
+    font-weight: 700;
+    color: #172033 !important;
+}
+
+.logo-section img {
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* Navigation */
+
+.navbar-nav {
+    gap: 25px;
+}
+
+.nav-link {
+    color: #555 !important;
+    font-size: 18px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #0d6efd !important;
+}
+
+
+/* Buttons */
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn {
+    border: 1px solid #dddddd;
+    padding: 8px 18px;
+}
+
+.register-btn {
+    padding: 8px 18px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero-section {
+    padding: 45px 0;
+    
+}
+
+.hero-box {
+    min-height: 380px;
+
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Hero Content */
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 50px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    line-height: 1.15;
+    font-weight: 700;
+
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: #c9d3df;
+
+    font-size: 16px;
+    line-height: 1.6;
+
+    max-width: 480px;
+
+    margin-bottom: 28px;
+}
+
+
+/* Search */
+
+.search-form {
+    max-width: 500px;
+}
+
+.search-form .input-group {
+    background-color: white;
+    padding: 5px;
+
+    border-radius: 8px;
+}
+
+.search-form .input-group-text {
+    background-color: transparent;
+    border: none;
+
+    color: #777;
+}
+
+.search-form .form-control {
+    border: none;
+    box-shadow: none;
+
+    font-size: 14px;
+}
+
+.search-btn {
+    border-radius: 6px !important;
+    padding: 10px 20px;
+}
+
+
+/* Hero Image */
+
+
+.hero-section {
+    padding: 45px 0;
+}
+
+.hero-box {
+    min-height: 420px;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    background-image: url("../image/mainbg.jpeg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    display: flex;
+
+    align-items: center;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services-section {
+    padding: 50px 0;
+}
+
+
+/* Heading */
+
+.services-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.services-heading h2 {
+    font-size: 24px;
+    font-weight: 700;
+
+    margin: 0;
+}
+
+.services-heading a {
+    text-decoration: none;
+
+    color: #0d6efd;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.services-heading a i {
+    margin-left: 5px;
+}
+
+
+/* =========================
+   SERVICE CARD
+========================= */
+
+.service-card {
+    min-height: 145px;
+
+    background-color: white;
+
+    border: 1px solid #e7eaf0;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px 10px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Hover */
+
+.service-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #0d6efd;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Icon */
+
+.service-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 12px;
+
+    margin-bottom: 12px;
+}
+
+.service-icon i {
+    font-size: 26px;
+}
+
+
+/* Different Icon Backgrounds */
+
+.plumber {
+    background-color: #e8f2ff;
+    color: #1677ff;
+}
+
+.ac {
+    background-color: #e8f8ff;
+    color: #159bd7;
+}
+
+.laptop {
+    background-color: #eeeaff;
+    color: #6854e8;
+}
+
+.cleaning {
+    background-color: #fff0f0;
+    color: #e74c3c;
+}
+
+.painting {
+    background-color: #fff5df;
+    color: #e49a16;
+}
+
+
+/* Card Heading */
+
+.service-card h4 {
+    font-size: 14px;
+    font-weight: 600;
+
+    margin: 0;
+
+    color: #263143;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        margin-top: 15px;
+        gap: 5px;
+    }
+
+    .auth-buttons {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .hero-content {
+        padding: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .hero-section {
+        padding: 25px 0;
+    }
+
+    .hero-content {
+        padding: 30px 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .hero-image img {
+        min-height: 250px;
+    }
+
+    .services-section {
+        padding: 35px 0;
+    }
+
+    .services-heading h2 {
+        font-size: 21px;
+    }
+
+}

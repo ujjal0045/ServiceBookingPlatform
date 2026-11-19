@@ -1,0 +1,309 @@
+/* =========================
+   General
+========================= */
+
+body {
+    margin: 0;
+    background-color: #f5f7fb;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   Sidebar
+========================= */
+
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #172554;
+    color: white;
+    padding: 25px 15px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.brand img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.brand h3 {
+    margin: 0;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu a {
+    display: block;
+    padding: 12px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu .active {
+    background-color: #2563eb;
+}
+
+.sidebar-menu i {
+    margin-right: 10px;
+}
+
+
+/* =========================
+   Main Content
+========================= */
+
+.main-content {
+    margin-left: 240px;
+    padding: 30px;
+}
+
+
+/* =========================
+   Topbar
+========================= */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.welcome h2 {
+    margin: 0;
+}
+
+.welcome p {
+    color: #6b7280;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile i {
+    font-size: 35px;
+    color: #2563eb;
+}
+
+
+/* =========================
+   Statistics Cards
+========================= */
+
+.stat-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.stat-card i {
+    font-size: 30px;
+    color: #2563eb;
+}
+
+.stat-card h3 {
+    margin-top: 10px;
+}
+
+
+/* =========================
+   Recent Bookings
+========================= */
+
+.booking-card {
+    background-color: #ffffff;
+    padding: 24px 28px;
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    border: 1px solid #eef0f5;
+
+    transition: 0.25s ease;
+}
+
+.booking-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Booking information */
+
+.booking-info {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+/* Booking icon */
+
+.booking-icon {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+
+    border-radius: 14px;
+    background-color: #eef3ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-icon i {
+    font-size: 25px;
+    color: #2563eb;
+}
+
+
+/* Booking title */
+
+.booking-info h3 {
+    margin: 0 0 10px;
+
+    font-size: 21px;
+    font-weight: 600;
+
+    color: #1e293b;
+}
+
+
+/* Booking details */
+
+.booking-info p {
+    margin: 6px 0;
+
+    color: #64748b;
+    font-size: 15px;
+}
+
+.booking-info p i {
+    margin-right: 7px;
+    color: #2563eb;
+}
+
+.booking-info strong {
+    color: #334155;
+}
+
+
+/* Booking status */
+
+.booking-status {
+    margin-left: 20px;
+}
+
+.status-badge {
+    display: inline-block;
+
+    padding: 8px 16px;
+
+    border-radius: 20px;
+
+    background-color: #fff3cd;
+    color: #856404;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px;
+        padding: 20px;
+    }
+
+    .booking-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .booking-status {
+        margin-left: 0;
+    }
+
+}
+
+/* ===== Notification Sidebar Badge ===== */
+
+.sidebar-menu a.notification-menu-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.notification-menu-link .notification-label {
+    flex: 1;
+}
+
+.sidebar-menu .notification-menu-link .notification-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+    margin-left: auto;
+
+    min-width: 24px;
+    height: 24px;
+    padding: 0 6px;
+
+    background: #ef4444;
+    color: #ffffff;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+
+    box-shadow: 0 2px 6px rgba(239, 68, 68, 0.35);
+}
+
+/* Keep notification icon aligned */
+
+.notification-menu-link .bi-bell {
+    font-size: 18px;
+    flex-shrink: 0;
+}

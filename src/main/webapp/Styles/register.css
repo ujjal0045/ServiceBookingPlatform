@@ -1,0 +1,555 @@
+/* =========================
+   HEADER
+========================= */
+
+header {
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+/* =========================
+   BRAND
+========================= */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand img {
+    width: 40px;
+    height: 40px;
+
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.brand h2 {
+    margin: 0;
+
+    font-size: 21px;
+    font-weight: 700;
+
+    color: #172033;
+}
+
+
+/* =========================
+   HEADER BUTTONS
+========================= */
+
+header > div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .btn {
+    padding: 8px 20px;
+
+    font-size: 14px;
+    border-radius: 7px;
+}
+
+
+/* Login Button */
+
+header .btn-light {
+    border: 1px solid #dddddd;
+    color: #172033;
+}
+
+
+/* Register Button */
+
+header .btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+
+/* =========================
+   HEADER HOVER
+========================= */
+
+header .btn-light:hover {
+    background-color: #f5f5f5;
+}
+
+header .btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0b5ed7;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    height: calc(100vh - 75px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 70px;
+
+    padding: 40px 8%;
+
+    background-color: #f5f7fb;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   LEFT INTRO CARD
+========================= */
+
+.intro-content {
+    width: 400px;
+
+    padding: 45px 40px;
+
+    background: linear-gradient(
+        135deg,
+        #0d6efd,
+        #084298
+    );
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px rgba(13, 110, 253, 0.25);
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   INTRO HEADING
+========================= */
+
+.intro-content h2 {
+    margin-bottom: 15px;
+
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   INTRO DESCRIPTION
+========================= */
+
+.intro-content p {
+    margin-bottom: 30px;
+
+    font-size: 16px;
+    line-height: 1.6;
+
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* =========================
+   FEATURE ITEM
+========================= */
+
+.feature {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px 15px;
+
+    background-color: rgba(255, 255, 255, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 10px;
+
+    transition: 0.2s ease;
+}
+
+
+/* Feature Hover */
+
+.feature:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+
+    transform: translateX(3px);
+}
+
+
+/* =========================
+   FEATURE ICON
+========================= */
+
+.feature i {
+    width: 22px;
+
+    font-size: 19px;
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+
+/* =========================
+   FEATURE TEXT
+========================= */
+
+.feature span {
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   FORM CARD
+========================= */
+
+main > div:last-child {
+    width: 430px;
+
+    max-height: calc(100vh - 110px);
+
+    padding: 32px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e5e8ee;
+    border-radius: 15px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+
+    overflow-y: auto;
+}
+
+
+/* =========================
+   FORM CARD SCROLLBAR
+========================= */
+
+main > div:last-child::-webkit-scrollbar {
+    width: 6px;
+}
+
+main > div:last-child::-webkit-scrollbar-track {
+    background: transparent;
+
+    border-radius: 10px;
+}
+
+main > div:last-child::-webkit-scrollbar-thumb {
+    background-color: #b7bdc8;
+
+    border-radius: 10px;
+}
+
+main > div:last-child::-webkit-scrollbar-thumb:hover {
+    background-color: #9299a5;
+}
+
+
+/* =========================
+   FORM HEADING
+========================= */
+
+main > div:last-child h2 {
+    margin-bottom: 20px;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    color: #172033;
+}
+
+
+/* =========================
+   FORM LABEL
+========================= */
+
+.form-label {
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #263143;
+}
+
+
+/* =========================
+   FORM INPUTS
+========================= */
+
+.form-control,
+.form-select {
+    height: 45px;
+
+    border: 1px solid #dfe3e8;
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    color: #263143;
+
+    box-shadow: none !important;
+
+    transition: 0.2s ease;
+}
+
+
+/* =========================
+   INPUT FOCUS
+========================= */
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #0d6efd;
+
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1) !important;
+}
+
+
+/* =========================
+   PLACEHOLDER
+========================= */
+
+.form-control::placeholder {
+    color: #9299a5;
+}
+
+
+/* =========================
+   REGISTER BUTTON
+========================= */
+
+main .btn-primary {
+    height: 46px;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+
+    transition: 0.2s ease;
+}
+
+
+/* =========================
+   REGISTER BUTTON HOVER
+========================= */
+
+main .btn-primary:hover {
+    background-color: #0b5ed7;
+
+    border-color: #0b5ed7;
+
+    transform: translateY(-1px);
+}
+
+.provider-fields {
+    display: none;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991px) {
+
+    main {
+        height: calc(100vh - 75px);
+
+        flex-direction: column;
+
+        justify-content: flex-start;
+
+        gap: 25px;
+
+        padding: 30px 20px;
+
+        overflow-y: auto;
+    }
+
+
+    /* Left Card */
+
+    .intro-content {
+        width: 100%;
+        max-width: 430px;
+
+        padding: 30px;
+    }
+
+
+    .intro-content h2 {
+        font-size: 32px;
+    }
+
+
+    .intro-content p {
+        font-size: 15px;
+    }
+
+
+    /* Form */
+
+    main > div:last-child {
+        width: 100%;
+        max-width: 430px;
+
+        max-height: 60vh;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 576px) {
+
+    /* Header */
+
+    header {
+        padding: 0 20px;
+    }
+
+
+    .brand h2 {
+        font-size: 18px;
+    }
+
+
+    .brand img {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    header .btn {
+        padding: 7px 12px;
+
+        font-size: 13px;
+    }
+
+
+    /* Main */
+
+    main {
+        padding: 25px 15px;
+
+        gap: 20px;
+    }
+
+
+    /* Left Card */
+
+    .intro-content {
+        width: 100%;
+
+        padding: 30px 25px;
+
+        border-radius: 15px;
+    }
+
+
+    .intro-content h2 {
+        font-size: 27px;
+    }
+
+
+    .intro-content p {
+        font-size: 14px;
+
+        margin-bottom: 22px;
+    }
+
+
+    /* Features */
+
+    .feature {
+        padding: 10px 12px;
+    }
+
+
+    .feature i {
+        font-size: 17px;
+    }
+
+
+    .feature span {
+        font-size: 13px;
+    }
+
+
+    /* Form Card */
+
+    main > div:last-child {
+        width: 100%;
+
+        padding: 25px 20px;
+
+        max-height: 65vh;
+
+        border-radius: 12px;
+    }
+
+
+    /* Form Heading */
+
+    main > div:last-child h2 {
+        font-size: 27px;
+    }
+
+
+    /* Inputs */
+
+    .form-control,
+    .form-select {
+        height: 43px;
+    }
+
+
+    /* Register Button */
+
+    main .btn-primary {
+        height: 44px;
+    }
+}

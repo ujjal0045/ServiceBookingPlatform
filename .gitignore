@@ -1,0 +1,20 @@
+# Eclipse generated files
+.metadata/
+.settings/
+
+# Java compiled files
+*.class
+
+# Build folders
+target/
+build/
+bin/
+
+# Server temporary files
+tmp/
+temp/
+logs/
+
+# Environment and secrets
+.env
+.env.*

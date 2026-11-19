@@ -1,0 +1,205 @@
+
+/* =========================
+   CUSTOMER PROFILE PAGE
+========================= */
+
+body {
+    background-color: #f4f6fb;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* =========================
+   PROFILE CARD
+========================= */
+
+.profile-card {
+    max-width: 650px;
+    margin: 50px auto;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* =========================
+   PROFILE HEADER
+========================= */
+
+.profile-icon {
+    font-size: 75px;
+    color: #2563eb;
+}
+
+.profile-card h3 {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.profile-card .text-muted {
+    color: #64748b !important;
+}
+
+/* =========================
+   PROFILE INFORMATION
+========================= */
+
+.profile-field {
+    background-color: #f8fafc;
+    padding: 16px 18px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #eef2f7;
+}
+
+.profile-field label {
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.profile-field p {
+    margin: 6px 0 0;
+    font-size: 16px;
+    color: #1e293b;
+    overflow-wrap: anywhere;
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.profile-card .d-flex > .btn {
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.profile-card .btn-primary {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+.profile-card .btn-primary:hover {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+/* =========================
+   EDIT PROFILE SECTION
+========================= */
+
+.edit-profile-section {
+    width: 100%;
+    background-color: #f8fafc;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.edit-profile-section h5 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+.edit-profile-section .form-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.edit-profile-section .form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.edit-profile-section .form-control:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+    outline: none;
+}
+
+/* =========================
+   SAVE CHANGES BUTTON
+========================= */
+
+.edit-profile-section .btn-success {
+    background-color: #198754;
+    border-color: #198754;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.edit-profile-section .btn-success:hover {
+    background-color: #157347;
+    border-color: #146c43;
+}
+
+/* =========================
+   ALERT MESSAGES
+========================= */
+
+.profile-card .alert {
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .profile-card {
+        margin: 30px 10px;
+    }
+
+    .profile-icon {
+        font-size: 60px;
+    }
+
+    .profile-field {
+        padding: 14px;
+    }
+
+    .profile-field p {
+        font-size: 15px;
+    }
+
+    .edit-profile-section {
+        padding: 16px;
+    }
+
+    .profile-card .d-flex > .btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .profile-card .card-body {
+        padding: 18px !important;
+    }
+
+    .profile-card .d-flex > .btn {
+        font-size: 13px;
+    }
+}
