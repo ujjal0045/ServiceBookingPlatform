@@ -115,10 +115,6 @@ git clone https://github.com/ujjal0045/ServiceBookingPlatform.git
 6. Accepted bookings can be marked as completed.
 7. Customer receives booking status notifications.
 
-## 📸 Project Screenshots
-
-Screenshots of the customer dashboard, provider dashboard, service listings, and booking management pages can be added here.
-
 ## 🔮 Future Enhancements
 
 - Admin dashboard
